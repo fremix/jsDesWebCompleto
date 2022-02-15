@@ -1,0 +1,32 @@
+/*window.addEventListener('scroll', () => {
+    console.log('scrolling');
+});
+
+
+
+window.addEventListener('scroll', () => {
+    const scrollPX = window.scrollY;
+
+    console.log(scrollPX);
+});
+
+*/
+
+window.addEventListener('scroll', () => {
+
+
+    const premium = document.querySelector('.premium');
+    const ubicacion = premium.getBoundingClientRect(); /**Muestra la ubicacion de un elemento */
+
+    // console.log(ubicacion);
+
+    if (ubicacion.top < 784 ) {
+        console.log('El elemento ya esta visible');
+    } else {
+        console.log('Aun no, da mas scroll');
+    }
+});
+
+
+
+
